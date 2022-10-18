@@ -1,0 +1,29 @@
+.maindiv{
+    background-color: darksalmon;
+    border-radius: 15px;
+    padding: 20px;
+    
+}
+form{
+    background-color: rgb(157, 233, 122);
+    border-radius: 15px;
+    padding: 20px;
+}
+.row{
+    font-size: large;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col1{
+    float:right;
+    width: 20%;
+    margin-top: 10px;
+}
+.col2{
+    float:right;
+    width: 20%;
+    margin-top: 10px;
+}

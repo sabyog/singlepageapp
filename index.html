@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>My Form Example</title>
+        <meta />
+        <link rel="stylesheet" href="css/mystyle.css"/>
+        <script>
+            function validateName(){
+                var ename=document.getElementById('ename').value;
+                if(ename.length<=8){
+                   document.getElementById('msg').innerText="Length should be 8";
+                   document.getElementById('msg').style.color='red';
+                   document.getElementById('ename').focus();
+            }else{
+                document.getElementById('msg').innerText="";
+                document.getElementById('msg').focus();
+               }
+        }
+        </script>
+    </head>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+    <body>
+        <div class="maindiv">
+            <form action="#">
+                <div class="row">
+                     <div class="col-50"><label>Enter Name:</label></div>
+                     <div class="col-50"><input type="text" id="ename" name="ename" placeholder="Enter Name.." required onblur="validateName()"><span id="msg"></span></div>
+                </div>
+                <div class="row">
+                    <div class="col-50"><label>Enter Mailid:</label></div>
+                    <div class="col-50"><input type="email" id="email" name="email" placeholder="Enter Emailid.." required></div>
+                </div>
+                <div class="row">
+                    <div class="col-50"><label>Qualification:</label></div>
+                    <div class="col-50">
+                     <select id="qualification" name="qualification">
+                        <option>UG</option>
+                        <option>PG</option>
+                        <option>Dr</option>
+                        <option>Others</option>
+                     </select>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-50"><label>About You:</label></div>
+                    <div class="col-50"><textarea id="about" name="about" placeholder="Write About u"></textarea></div>
+                </div>
+                <div class="row">
+                    <div class="col-50"><input type="submit" value="Send"></div>
+                    <div class="col-50"><input type="reset" value="Cancel"></div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

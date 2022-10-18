@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>My Form Example</title>
+        <meta />
+        <link rel="stylesheet" href="css/mystyle.css"/>
+    </head>
+    <style type="text/css">
+        .maindiv{
+            color:blue;
+            
+        }
+        .col1{
+            color:red;
+        }
+    </style>
+    <body style="font-style: oblique;">
+        <h1>Welcome</h1>
+        <div class="maindiv">
+            Fill the Form:
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <header></header>
+                <main>
+                    <section>
+
+                    </section>
+                </main>
+                <footer></footer>
+                <div class="row">
+                    <div class="col1"><label>Enter Name:</label></div>
+                    <div class="col2"><input type="text" id="ename" name="ename" placeholder="Enter Name.." required onblur="validateName()"><span id="msg"></span></div>
+               </div>
+               <div class="row">
+                   <div class="col1"><label>Enter Mailid:</label></div>
+                   <div class="col2"><input type="email" id="email" name="email" placeholder="Enter Emailid.." required></div>
+               </div>
+               <div class="row">
+                   <div class="col1"><label>Qualification:</label></div>
+                   <div class="col2">
+                    <select id="qualification" name="qualification">
+                       <option>UG</option>
+                       <option>PG</option>
+                       <option>Dr</option>
+                       <option>Others</option>
+                    </select>   
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col1"><label>About You:</label></div>
+                   <div class="col2"><textarea id="about" name="about" placeholder="Write About u"></textarea></div>
+               </div>
+               <div class="row">
+                   <div class="col1"><input type="submit" value="Send"></div>
+                   <div class="col2"><input type="reset" value="Cancel"></div>
+               </div>
+            </form>
+        </div>
+    </body>
